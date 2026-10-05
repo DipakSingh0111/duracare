@@ -4,13 +4,13 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import data from "@/data/duracare.json";
+import { site, type HeaderData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
 import Topbar from "@/components/common/Topbar";
 
-const { brand, navbar, labels } = data;
-
-export default function Navbar() {
+export default function Navbar({ data, className = "" }: SectionProps<HeaderData> = {}) {
+  const navbar = data || site.header;
+  const { logo, labels } = site;
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(false);
@@ -19,15 +19,15 @@ export default function Navbar() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="relative z-50 h-[50px] shrink-0 lg:h-[54px]">
+    <header className={`relative z-50 h-[50px] shrink-0 lg:h-[54px] ${className}`}>
       <Topbar className="fixed inset-x-0 top-0 z-50" />
 
       <div className="fixed inset-x-0 top-[50px] z-50 px-3 pt-1 sm:px-6 lg:top-[54px] lg:px-10">
         <nav className="mx-auto flex h-[68px] max-w-[1400px] items-center justify-between rounded-full bg-white pl-5 pr-2.5 shadow-[0_14px_34px_-14px_rgba(6,26,69,0.55)] sm:pl-8 lg:h-[74px] lg:pl-12 lg:pr-3">
           <Link href="/" aria-label={labels.logoHome} className="shrink-0">
             <Image
-              src={brand.headerLogo}
-              alt={brand.logoAlt}
+              src={logo.header}
+              alt={logo.alt}
               width={2172}
               height={724}
               preload
@@ -36,7 +36,7 @@ export default function Navbar() {
           </Link>
 
           <ul className="hidden items-center gap-9 lg:flex xl:gap-[60px]">
-            {navbar.links.map((l) => (
+            {navbar.menu.map((l) => (
               <li key={l.label} className="group relative">
                 <Link
                   href={l.href}
@@ -45,7 +45,7 @@ export default function Navbar() {
                   }`}
                 >
                   {l.label}
-                  {l.children && (
+                  {l.dropdown && (
                     <Icon
                       name={navbar.icons.dropdown}
                       size={11}
@@ -59,9 +59,9 @@ export default function Navbar() {
                   />
                 </Link>
 
-                {l.children && (
+                {l.dropdown && (
                   <ul className="invisible absolute left-1/2 top-full z-50 w-60 -translate-x-1/2 translate-y-2 rounded-2xl bg-white p-2 opacity-0 shadow-[0_20px_40px_-12px_rgba(11,42,111,0.35)] transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                    {l.children.map((c) => (
+                    {l.dropdown.map((c) => (
                       <li key={c.label}>
                         <Link
                           href={c.href}
@@ -105,9 +105,9 @@ export default function Navbar() {
         {open && (
           <div className="mx-auto mt-2 max-h-[calc(100vh-110px)] max-w-[1400px] overflow-y-auto rounded-3xl bg-white p-4 shadow-xl lg:hidden">
             <ul className="space-y-1">
-              {navbar.links.map((l) => (
+              {navbar.menu.map((l) => (
                 <li key={l.label}>
-                  {l.children ? (
+                  {l.dropdown ? (
                     <>
                       <button
                         type="button"
@@ -123,7 +123,7 @@ export default function Navbar() {
                       </button>
                       {mobileDropdown && (
                         <ul className="ml-4 border-l-2 border-orange/40 pl-3">
-                          {l.children.map((c) => (
+                          {l.dropdown.map((c) => (
                             <li key={c.label}>
                               <Link
                                 href={c.href}

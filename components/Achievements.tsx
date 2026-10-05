@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import data from "@/data/duracare.json";
+import { site, type AchievementsData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
 import SectionHeading from "@/components/common/SectionHeading";
 import Container from "@/components/common/Container";
-
-const { achievements } = data;
 
 function CountUp({ value, duration = 2000 }: { value: string; duration?: number }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -58,16 +56,16 @@ function CountUp({ value, duration = 2000 }: { value: string; duration?: number 
   );
 }
 
-export default function Achievements() {
+export default function Achievements({ data, className = "" }: SectionProps<AchievementsData> = {}) {
+  const achievements = data || site.achievements;
   const [active, setActive] = useState(achievements.defaultActive);
 
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className={`bg-white py-16 lg:py-20 ${className}`}>
       <Container>
         <SectionHeading
-          eyebrow={achievements.eyebrow}
-          title={achievements.title}
-          highlight={achievements.titleHighlight}
+          badge={achievements.badge}
+          heading={achievements.heading}
           description={achievements.description}
         />
 
@@ -75,7 +73,7 @@ export default function Achievements() {
           className="mt-12 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4"
           onMouseLeave={() => setActive(achievements.defaultActive)}
         >
-          {achievements.stats.map((s, i) => {
+          {achievements.list.map((s, i) => {
             const isActive = active === i;
             return (
               <div

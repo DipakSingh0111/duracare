@@ -1,20 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { site, type FaqData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
 
-type FaqAccordionProps = {
-  items: { question: string; answer: string }[];
-  defaultOpen?: number;
-  toggleIcon: string;
-};
-
-export default function FaqAccordion({ items, defaultOpen = 0, toggleIcon }: FaqAccordionProps) {
-  const [open, setOpen] = useState<number | null>(defaultOpen);
+export default function FaqAccordion({ data, className = "" }: SectionProps<FaqData> = {}) {
+  const faq = data || site.faq;
+  const [open, setOpen] = useState<number | null>(faq.defaultOpen);
 
   return (
-    <div className="space-y-4">
-      {items.map((item, i) => {
+    <div className={`space-y-4 ${className}`}>
+      {faq.list.map((item, i) => {
         const isOpen = open === i;
         return (
           <div key={item.question} className="rounded-xl bg-soft">
@@ -34,7 +30,7 @@ export default function FaqAccordion({ items, defaultOpen = 0, toggleIcon }: Faq
                 {item.question}
               </span>
               <Icon
-                name={toggleIcon}
+                name={faq.toggleIcon}
                 size={16}
                 className={`shrink-0 text-navy transition-transform duration-300 ${
                   isOpen ? "rotate-180" : ""

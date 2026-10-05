@@ -2,20 +2,18 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import data from "@/data/duracare.json";
+import { site, type GalleryMediaData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
-
-const { icons } = data.gallery;
-const { labels } = data;
 
 type MediaItem = { src: string; alt: string; thumbnail?: string };
 
-type MediaGalleryProps = {
-  items: MediaItem[];
-  type: "image" | "video";
-};
+type MediaGalleryProps = SectionProps<GalleryMediaData> & { type?: "image" | "video" };
 
-export default function MediaGallery({ items, type }: MediaGalleryProps) {
+export default function MediaGallery({ data, type = "image", className = "" }: MediaGalleryProps) {
+  const media = data || (type === "video" ? site.gallery.videos : site.gallery.images);
+  const items: MediaItem[] = media.list;
+  const { icons } = site.gallery;
+  const { labels } = site;
   const [active, setActive] = useState<number | null>(null);
   const isVideo = type === "video";
 
@@ -45,7 +43,7 @@ export default function MediaGallery({ items, type }: MediaGalleryProps) {
 
   return (
     <>
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className={`grid gap-5 sm:grid-cols-2 lg:grid-cols-3 ${className}`}>
         {items.map((item, i) => (
           <button
             key={`${item.src}-${i}`}

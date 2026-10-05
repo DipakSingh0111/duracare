@@ -1,23 +1,23 @@
+import type { HeadingData } from "@/data";
+
 type SectionHeadingProps = {
-  eyebrow?: string;
-  title: string;
-  highlight: string;
-  titleEnd?: string;
+  badge?: string;
+  heading: HeadingData;
   description: string;
   dark?: boolean;
+  className?: string;
 };
 
 export default function SectionHeading({
-  eyebrow,
-  title,
-  highlight,
-  titleEnd,
+  badge,
+  heading,
   description,
   dark = false,
+  className = "",
 }: SectionHeadingProps) {
   return (
-    <div className="mx-auto max-w-[760px] text-center">
-      {eyebrow ? (
+    <div className={`mx-auto max-w-[760px] text-center ${className}`}>
+      {badge ? (
         <div className="flex items-center justify-center gap-3">
           <span className="h-[2px] w-8 bg-orange" />
           <span
@@ -25,7 +25,7 @@ export default function SectionHeading({
               dark ? "text-white" : "text-navy"
             }`}
           >
-            {eyebrow}
+            {badge}
           </span>
           <span className="h-[2px] w-8 bg-orange" />
         </div>
@@ -38,8 +38,8 @@ export default function SectionHeading({
           dark ? "text-white" : "text-navy"
         }`}
       >
-        {title} <span className="text-orange">{highlight}</span>
-        {titleEnd && <> {titleEnd}</>}
+        {heading.main} <span className="text-orange">{heading.highlight}</span>
+        {heading.end && <> {heading.end}</>}
       </h2>
 
       <p

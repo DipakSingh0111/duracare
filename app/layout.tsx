@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Barlow_Condensed } from "next/font/google";
-import data from "@/data/duracare.json";
+import { site } from "@/data";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import "./globals.css";
@@ -18,8 +18,8 @@ const barlow = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: data.site.title,
-  description: data.site.description,
+  title: site.meta.title,
+  description: site.meta.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

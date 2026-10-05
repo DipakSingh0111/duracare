@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import data from "@/data/duracare.json";
+import { site, type BlogData, type BlogPostData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
 
-const { blog } = data;
+type PostCardProps = SectionProps<BlogPostData> & { blog?: BlogData };
 
-export type Post = (typeof blog.posts)[number];
+export const postHref = (post: BlogPostData) => `/blog/${post.slug}`;
 
-export const postHref = (post: Post) => `/blog/${post.slug}`;
-
-export function FeaturedPostCard({ post, className = "" }: { post: Post; className?: string }) {
+export function FeaturedPostCard({ data, blog = site.blog, className = "" }: PostCardProps) {
+  const post = data || blog.posts[0];
   return (
     <article
       className={`group relative isolate flex min-h-[420px] flex-col justify-end overflow-hidden rounded-[22px] p-6 shadow-lg sm:p-8 ${className}`}
@@ -49,7 +48,8 @@ export function FeaturedPostCard({ post, className = "" }: { post: Post; classNa
   );
 }
 
-export function PostCard({ post, className = "" }: { post: Post; className?: string }) {
+export function PostCard({ data, blog = site.blog, className = "" }: PostCardProps) {
+  const post = data || blog.posts[0];
   return (
     <article className={`group grid gap-5 ${className} rounded-[22px] border border-slate-100 bg-white p-3.5 shadow-[0_8px_30px_-12px_rgba(11,42,111,0.2)] transition-shadow duration-300 hover:shadow-[0_18px_40px_-14px_rgba(11,42,111,0.3)] sm:grid-cols-[45%_1fr]`}>
       <div className="relative min-h-[190px] overflow-hidden rounded-2xl bg-slate-200">

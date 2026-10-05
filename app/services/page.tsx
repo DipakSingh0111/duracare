@@ -1,21 +1,14 @@
 import type { Metadata } from "next";
-import data from "@/data/duracare.json";
+import { site } from "@/data";
 import PageBanner from "@/components/common/PageBanner";
 import Services from "@/components/Services";
 
-const { banner, meta } = data.pages.services;
-
-export const metadata: Metadata = meta;
+export const metadata: Metadata = site.pages.services.meta;
 
 export default function ServicesPage() {
   return (
     <>
-      <PageBanner
-        title={banner.title}
-        highlight={banner.highlight}
-        description={banner.description}
-        breadcrumb={banner.breadcrumb}
-      />
+      <PageBanner page="services" />
       <Services variant="light" />
     </>
   );

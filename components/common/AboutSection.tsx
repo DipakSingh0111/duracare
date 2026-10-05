@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import data from "@/data/duracare.json";
+import { site, splitLines, type AboutData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
 import Container from "@/components/common/Container";
 
-const { about } = data;
+type AboutSectionProps = SectionProps<AboutData> & { showCta?: boolean };
 
-export default function AboutSection() {
+export default function AboutSection({ data, className = "", showCta = true }: AboutSectionProps = {}) {
+  const about = data || site.about;
+
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className={`bg-white py-16 lg:py-24 ${className}`}>
       <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
         <div className="relative mx-auto aspect-[10/9] w-full max-w-[600px]">
           <div className="absolute right-0 top-0 h-full w-[82%] overflow-hidden rounded-[28px] bg-slate-200">
@@ -33,11 +35,15 @@ export default function AboutSection() {
         </div>
 
         <div>
-          <p className="text-[15px] font-semibold text-navy">{about.eyebrow}</p>
+          <p className="text-[15px] font-semibold text-navy">{about.badge}</p>
 
           <h2 className="mt-3 text-[30px] font-bold leading-[1.15] sm:text-4xl lg:text-[44px]">
-            <span className="block text-navy">{about.title}</span>
-            <span className="block text-orange">{about.titleHighlight}</span>
+            {splitLines(about.heading.main).map((line) => (
+              <span key={line} className="block text-navy">
+                {line}
+              </span>
+            ))}
+            <span className="block text-orange">{about.heading.highlight}</span>
           </h2>
 
           <p className="mt-5 text-[15px] leading-relaxed text-slate-500">
@@ -83,17 +89,19 @@ export default function AboutSection() {
                 ))}
               </ul>
 
-              <Link
-                href={about.button.href}
-                className="group/btn mt-7 inline-flex w-fit items-center gap-3 rounded-full bg-orange px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_24px_-8px_rgba(255,106,19,0.6)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy"
-              >
-                {about.button.label}
-                <Icon
-                  name={about.button.icon}
-                  size={13}
-                  className="transition-transform duration-300 group-hover/btn:translate-x-1"
-                />
-              </Link>
+              {showCta && (
+                <Link
+                  href={about.cta.href}
+                  className="group/btn mt-7 inline-flex w-fit items-center gap-3 rounded-full bg-orange px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_24px_-8px_rgba(255,106,19,0.6)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-navy"
+                >
+                  {about.cta.label}
+                  <Icon
+                    name={about.cta.icon}
+                    size={13}
+                    className="transition-transform duration-300 group-hover/btn:translate-x-1"
+                  />
+                </Link>
+              )}
             </div>
           </div>
         </div>

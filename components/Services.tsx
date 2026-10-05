@@ -1,30 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
-import data from "@/data/duracare.json";
+import { site, type SectionProps, type ServicesData } from "@/data";
 import Icon from "@/components/common/Icon";
 import SectionHeading from "@/components/common/SectionHeading";
 import Container from "@/components/common/Container";
 
-const { services } = data;
-
-type ServicesProps = {
+type ServicesProps = SectionProps<ServicesData> & {
   variant?: "dark" | "light";
   limit?: number;
 };
 
-export default function Services({ variant = "dark", limit }: ServicesProps) {
+export default function Services({ data, className = "", variant = "dark", limit }: ServicesProps = {}) {
+  const services = data || site.services;
   const dark = variant === "dark";
-  const items = limit ? services.items.slice(0, limit) : services.items;
+  const items = limit ? services.list.slice(0, limit) : services.list;
 
   return (
-    <section className={`py-16 lg:py-20 ${dark ? "bg-brand" : "bg-white"}`}>
+    <section className={`py-16 lg:py-20 ${dark ? "bg-brand" : "bg-white"} ${className}`}>
       <Container>
         <SectionHeading
           dark={dark}
-          eyebrow={services.eyebrow}
-          title={services.titleStart}
-          highlight={services.titleHighlight}
-          titleEnd={services.titleEnd}
+          badge={services.badge}
+          heading={services.heading}
           description={services.description}
         />
 

@@ -1,23 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import data from "@/data/duracare.json";
+import { site, type FooterData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
 import Container from "@/components/common/Container";
 
-const { brand, contact, socials, footer, labels } = data;
-
-const contactItems = [
-  { icon: footer.contactIcons.address, text: contact.address },
-  { icon: footer.contactIcons.phone, text: contact.phone, href: contact.phoneHref },
-  { icon: footer.contactIcons.email, text: contact.email, href: contact.emailHref },
-  { icon: footer.contactIcons.hours, text: contact.hours },
-];
-
-function LinkColumn({ title, links }: { title: string; links: { label: string; href: string }[] }) {
+function LinkColumn({ title, links, icon }: { title: string; links: { label: string; href: string }[]; icon: string }) {
   return (
     <div className="lg:border-l lg:border-white/15 lg:pl-8">
       <h3 className="text-lg font-semibold">{title}</h3>
-      <ul className="mt-6 space-y-3">
+      <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-1">
         {links.map((link) => (
           <li key={link.label}>
             <Link
@@ -25,9 +16,9 @@ function LinkColumn({ title, links }: { title: string; links: { label: string; h
               className="group flex items-center gap-2.5 text-sm text-white/80 transition-colors hover:text-orange"
             >
               <Icon
-                name={footer.linkIcon}
+                name={icon}
                 size={9}
-                className="text-orange transition-transform group-hover:translate-x-1"
+                className="shrink-0 text-orange transition-transform group-hover:translate-x-1"
               />
               {link.label}
             </Link>
@@ -38,21 +29,30 @@ function LinkColumn({ title, links }: { title: string; links: { label: string; h
   );
 }
 
-export default function Footer() {
+export default function Footer({ data, className = "" }: SectionProps<FooterData> = {}) {
+  const footer = data || site.footer;
+  const { contact, socials, logo, labels } = site;
+  const contactItems = [
+    { icon: footer.contactIcons.address, text: contact.address },
+    { icon: footer.contactIcons.phone, text: contact.phone, href: contact.phoneHref },
+    { icon: footer.contactIcons.email, text: contact.email, href: contact.emailHref },
+    { icon: footer.contactIcons.hours, text: contact.hours },
+  ];
+
   return (
-    <footer className="bg-brand-dark text-white">
+    <footer className={`bg-brand-dark text-white ${className}`}>
       <Container className="grid gap-10 pb-12 pt-16 sm:grid-cols-2 lg:grid-cols-[1.1fr_1fr_1.15fr_1.25fr] lg:gap-8">
         <div>
           <Link href="/" aria-label={labels.logoHome}>
             <Image
-              src={brand.footerLogo}
-              alt={brand.logoAlt}
+              src={logo.footer}
+              alt={logo.alt}
               width={2172}
               height={724}
               className="-ml-5 h-[88px] w-auto"
             />
           </Link>
-          <p className="mt-2 text-sm leading-relaxed text-white/80">{footer.about}</p>
+          <p className="mt-2 text-sm leading-relaxed text-white/80">{footer.description}</p>
 
           <div className="my-6 border-t border-white/15" />
 
@@ -60,9 +60,11 @@ export default function Footer() {
           <div className="mt-4 flex items-center gap-2.5">
             {socials.map((s) => (
               <a
-                key={s.label}
-                href={s.href}
-                aria-label={s.label}
+                key={s.name}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.name}
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/50 transition-colors hover:border-orange hover:bg-orange"
               >
                 <Icon name={s.icon} size={13} />
@@ -71,8 +73,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <LinkColumn title={footer.quickLinks.title} links={footer.quickLinks.links} />
-        <LinkColumn title={footer.services.title} links={footer.services.links} />
+        <LinkColumn title={footer.quickLinks.title} links={footer.quickLinks.list} icon={footer.linkIcon} />
+        <LinkColumn title={footer.services.title} links={footer.services.list} icon={footer.linkIcon} />
 
         <div className="lg:border-l lg:border-white/15 lg:pl-8">
           <h3 className="text-lg font-semibold">{footer.contactTitle}</h3>

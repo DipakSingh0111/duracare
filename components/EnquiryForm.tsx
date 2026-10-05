@@ -1,37 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import data from "@/data/duracare.json";
+import { site, type EnquiryFormData, type SectionProps } from "@/data";
 import Icon from "@/components/common/Icon";
-
-const { labels } = data;
-
-type Field = {
-  name: string;
-  label: string;
-  type: string;
-  placeholder: string;
-  required: boolean;
-  full?: boolean;
-  options?: string[];
-};
-
-type EnquiryFormProps = {
-  fields: Field[];
-  submit: string;
-  submitIcon: string;
-  success: { icon: string; title: string; text: string; button: string };
-};
 
 const inputClass =
   "w-full rounded-xl border border-slate-200 bg-soft px-4 py-3.5 text-[15px] text-navy outline-none transition placeholder:text-slate-400 focus:border-orange focus:bg-white focus:ring-4 focus:ring-orange/15";
 
-export default function EnquiryForm({ fields, submit, submitIcon, success }: EnquiryFormProps) {
+export default function EnquiryForm({ data, className = "" }: SectionProps<EnquiryFormData> = {}) {
+  const { fields, submit, submitIcon, success } = data || site.contactPage.form;
+  const { labels } = site;
   const [sent, setSent] = useState(false);
 
   if (sent) {
     return (
-      <div className="flex flex-col items-center rounded-2xl bg-soft px-6 py-14 text-center">
+      <div className={`flex flex-col items-center rounded-2xl bg-soft px-6 py-14 text-center ${className}`}>
         <span className="flex h-20 w-20 items-center justify-center rounded-full bg-orange/10 text-orange">
           <Icon name={success.icon} size={40} />
         </span>
@@ -54,7 +37,7 @@ export default function EnquiryForm({ fields, submit, submitIcon, success }: Enq
         e.preventDefault();
         setSent(true);
       }}
-      className="grid gap-5 sm:grid-cols-2"
+      className={`grid gap-5 sm:grid-cols-2 ${className}`}
     >
       {fields.map((f) => {
         const id = `field-${f.name}`;
@@ -85,7 +68,7 @@ export default function EnquiryForm({ fields, submit, submitIcon, success }: Enq
                 <option value="" disabled>
                   {f.placeholder}
                 </option>
-                {f.options?.map((o) => (
+                {("options" in f && f.options ? f.options : []).map((o) => (
                   <option key={o} value={o}>
                     {o}
                   </option>
