@@ -1,0 +1,1306 @@
+{
+  "site": {
+    "title": "DuraCare | Reliable Waterproofing Solutions",
+    "description": "DuraCare provides professional terrace, bathroom, basement and water tank waterproofing solutions for residential, commercial and industrial spaces.",
+    "titleSuffix": " | DuraCare"
+  },
+
+  "labels": {
+    "logoHome": "DuraCare home",
+    "toggleMenu": "Toggle menu",
+    "breadcrumb": "Breadcrumb",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "playVideo": "Play video",
+    "viewImage": "View image",
+    "requiredMark": "*"
+  },
+
+  "brand": {
+    "name": "DuraCare",
+    "headerLogo": "/images/header-logo.png",
+    "footerLogo": "/images/footer-logo.png",
+    "logoAlt": "DuraCare Waterproofing logo"
+  },
+
+  "contact": {
+    "phone": "+91 1234 567 789",
+    "phoneHref": "tel:+911234567789",
+    "email": "info@duracare.in",
+    "emailHref": "mailto:info@duracare.in",
+    "address": "123 Street, CA, USA",
+    "hours": "Mon - Sat: 09:00 AM - 05:00 PM"
+  },
+
+  "socials": [
+    { "label": "Facebook", "icon": "FaFacebookF", "href": "#" },
+    { "label": "LinkedIn", "icon": "FaLinkedinIn", "href": "#" },
+    { "label": "Twitter", "icon": "FaTwitter", "href": "#" },
+    { "label": "Instagram", "icon": "FaInstagram", "href": "#" },
+    { "label": "YouTube", "icon": "FaYoutube", "href": "#" }
+  ],
+
+  "topbar": {
+    "phoneIcon": "FaPhoneAlt",
+    "emailIcon": "FaEnvelope"
+  },
+
+  "navbar": {
+    "links": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us", "href": "/about" },
+      {
+        "label": "Services",
+        "href": "/services",
+        "children": [
+          { "label": "Terrace Waterproofing", "href": "/services/terrace" },
+          { "label": "Bathroom Waterproofing", "href": "/services/bathroom" },
+          { "label": "Basement Waterproofing", "href": "/services/basement" },
+          {
+            "label": "Water Tank Waterproofing",
+            "href": "/services/water-tank"
+          }
+        ]
+      },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Contact Us", "href": "/contact" }
+    ],
+    "cta": { "label": "Get A Quote", "href": "/get-a-quote" },
+    "icons": {
+      "dropdown": "FaChevronDown",
+      "arrow": "FaArrowRight",
+      "menu": "FaBars",
+      "close": "FaTimes"
+    }
+  },
+
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1920&q=80",
+    "imageAlt": "City rooftops at sunset",
+    "titleLines": ["Reliable Waterproofing", "Solutions for a"],
+    "titleHighlight": "Dryer, Safer Tomorrow",
+    "button": { "label": "Contact Us", "href": "/contact" }
+  },
+
+  "pageBanner": {
+    "image": "https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&w=1920&q=80",
+    "imageAlt": "Waterproofing professional working on a rooftop",
+    "homeLabel": "Home",
+    "homeHref": "/",
+    "homeIcon": "TbHomeFilled",
+    "separatorIcon": "TbChevronRight"
+  },
+
+  "pages": {
+    "about": {
+      "meta": {
+        "title": "About Us | DuraCare",
+        "description": "Learn about DuraCare, a trusted waterproofing company delivering reliable, long-lasting solutions for homes and businesses."
+      },
+      "banner": {
+        "title": "About ",
+        "highlight": "Us",
+        "description": "Committed to providing reliable waterproofing and roofing solutions for safer, stronger and longer-lasting homes.",
+        "breadcrumb": [{ "label": "About Us" }]
+      }
+    },
+    "services": {
+      "meta": {
+        "title": "Services | DuraCare",
+        "description": "Explore DuraCare's terrace, bathroom, basement, water tank, roof, wall, balcony and swimming pool waterproofing services."
+      },
+      "banner": {
+        "title": "Servic",
+        "highlight": "es",
+        "description": "Professional waterproofing and roofing services tailored to protect your property and ensure long-lasting durability.",
+        "breadcrumb": [{ "label": "Services" }]
+      }
+    },
+    "faq": {
+      "meta": {
+        "title": "FAQ | DuraCare",
+        "description": "Answers to common questions about DuraCare waterproofing services, materials, process and warranty."
+      },
+      "banner": {
+        "title": "FA",
+        "highlight": "Q",
+        "description": "Find answers to commonly asked questions about our waterproofing services, process, and solutions.",
+        "breadcrumb": [{ "label": "FAQ" }]
+      }
+    },
+    "blog": {
+      "meta": {
+        "title": "Blog | DuraCare",
+        "description": "Waterproofing and roofing tips, guides and expert advice from the DuraCare team."
+      },
+      "banner": {
+        "title": "Blo",
+        "highlight": "g",
+        "description": "Insights, tips and expert advice on waterproofing and roofing to help you protect your property and make informed decisions.",
+        "breadcrumb": [{ "label": "Blog" }]
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact Us | DuraCare",
+        "description": "Get in touch with DuraCare for waterproofing enquiries, site inspections and support."
+      },
+      "banner": {
+        "title": "Contact ",
+        "highlight": "Us",
+        "description": "Have a leakage problem or a question about waterproofing? Reach out to our team and we'll get back to you quickly.",
+        "breadcrumb": [{ "label": "Contact Us" }]
+      }
+    },
+    "quote": {
+      "meta": {
+        "title": "Get A Quote | DuraCare",
+        "description": "Request a free, no-obligation waterproofing quote and site inspection from DuraCare."
+      },
+      "banner": {
+        "title": "Get A ",
+        "highlight": "Quote",
+        "description": "Tell us about your property and requirement. Our experts will inspect the site and share a clear, no-obligation quotation.",
+        "breadcrumb": [{ "label": "Get A Quote" }]
+      }
+    },
+    "gallery": {
+      "meta": {
+        "title": "Gallery | DuraCare",
+        "description": "See photos and videos of DuraCare's recent waterproofing and roofing projects."
+      },
+      "banner": {
+        "title": "Our ",
+        "highlight": "Gallery",
+        "description": "Explore our recent waterproofing and roofing projects to see the quality of our work and real results.",
+        "breadcrumb": [{ "label": "Gallery" }]
+      }
+    },
+    "blogDetails": {
+      "banner": {
+        "title": "Blog ",
+        "highlight": "Details",
+        "description": "Insights, tips and expert advice on waterproofing and roofing to help you protect your property and make informed decisions.",
+        "breadcrumb": [
+          { "label": "Blog", "href": "/blog" },
+          { "label": "Blog Details" }
+        ]
+      }
+    }
+  },
+
+  "serviceDetails": {
+    "banner": {
+      "title": "Service ",
+      "highlight": "Details",
+      "description": "Professional waterproofing and roofing services tailored to protect your property and ensure long-lasting durability.",
+      "breadcrumb": [
+        { "label": "Services", "href": "/services" },
+        { "label": "Service Details" }
+      ]
+    },
+    "sidebarTitle": "Explore Our Waterproofing Services",
+    "linkIcon": "FaArrowRight",
+    "contactCard": {
+      "icon": "FaBuilding",
+      "name": "DuraCare",
+      "title": "Let's Protect Your Property Together",
+      "items": [
+        { "icon": "FaClock", "text": "Mon - Sat: 9:00 AM - 7:00 PM" },
+        {
+          "icon": "FaMapMarkerAlt",
+          "text": "123 Business Avenue, Sector 62, Noida - 201301"
+        },
+        {
+          "icon": "FaEnvelope",
+          "text": "info@duracare.in",
+          "href": "mailto:info@duracare.in"
+        }
+      ],
+      "button": { "label": "Get A Free Quote", "href": "/get-a-quote" }
+    }
+  },
+
+  "contactPage": {
+    "info": {
+      "eyebrow": "Contact Info",
+      "title": "We're Here to",
+      "titleHighlight": "Help You",
+      "description": "Reach us by phone, email or visit our office. Our team is ready to answer your questions and solve your waterproofing problems.",
+      "cards": [
+        {
+          "icon": "FaMapMarkerAlt",
+          "title": "Our Office",
+          "lines": ["123 Street, CA, USA"]
+        },
+        {
+          "icon": "FaPhoneAlt",
+          "title": "Call Us",
+          "lines": ["+91 1234 567 789"],
+          "href": "tel:+911234567789"
+        },
+        {
+          "icon": "FaEnvelope",
+          "title": "Email Us",
+          "lines": ["info@duracare.in"],
+          "href": "mailto:info@duracare.in"
+        },
+        {
+          "icon": "FaClock",
+          "title": "Working Hours",
+          "lines": ["Mon - Sat: 09:00 AM - 05:00 PM", "Sunday: Closed"]
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Get In Touch",
+      "title": "Send Us a",
+      "titleHighlight": "Message",
+      "description": "Fill out the form below and our team will contact you within 24 hours.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Full Name",
+          "type": "text",
+          "placeholder": "Enter your name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email Address",
+          "type": "email",
+          "placeholder": "Enter your email",
+          "required": true
+        },
+        {
+          "name": "phone",
+          "label": "Phone Number",
+          "type": "tel",
+          "placeholder": "Enter your phone number",
+          "required": true
+        },
+        {
+          "name": "subject",
+          "label": "Subject",
+          "type": "text",
+          "placeholder": "How can we help?",
+          "required": false
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "placeholder": "Write your message...",
+          "required": true,
+          "full": true
+        }
+      ],
+      "submit": "Send Message",
+      "submitIcon": "FaPaperPlane",
+      "success": {
+        "icon": "FaCheckCircle",
+        "title": "Thank You!",
+        "text": "Your message has been sent successfully. Our team will get back to you shortly.",
+        "button": "Send Another Message"
+      }
+    },
+    "map": {
+      "title": "DuraCare office location",
+      "embedUrl": "https://maps.google.com/maps?q=123%20Street%2C%20CA%2C%20USA&z=14&output=embed"
+    }
+  },
+
+  "quotePage": {
+    "aside": {
+      "icon": "FaClipboardList",
+      "title": "Why Get a Quote From DuraCare?",
+      "description": "Get an accurate estimate from certified waterproofing experts, with no hidden costs and no obligation.",
+      "checkIcon": "FaCheck",
+      "benefits": [
+        "Free site inspection",
+        "Transparent, detailed pricing",
+        "Response within 24 hours",
+        "Certified & experienced team",
+        "Written warranty on work"
+      ],
+      "help": {
+        "icon": "FaHeadset",
+        "title": "Need Help Right Away?",
+        "text": "Call our experts for instant assistance.",
+        "phone": "+91 1234 567 789",
+        "phoneHref": "tel:+911234567789",
+        "email": "info@duracare.in",
+        "emailHref": "mailto:info@duracare.in"
+      }
+    },
+    "form": {
+      "eyebrow": "Free Estimate",
+      "title": "Request a",
+      "titleHighlight": "Free Quote",
+      "description": "Share a few details about your property and requirement. The more you tell us, the more accurate your quote will be.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Full Name",
+          "type": "text",
+          "placeholder": "Enter your name",
+          "required": true
+        },
+        {
+          "name": "phone",
+          "label": "Phone Number",
+          "type": "tel",
+          "placeholder": "Enter your phone number",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email Address",
+          "type": "email",
+          "placeholder": "Enter your email",
+          "required": true
+        },
+        {
+          "name": "location",
+          "label": "City / Location",
+          "type": "text",
+          "placeholder": "Enter your city or area",
+          "required": true
+        },
+        {
+          "name": "propertyType",
+          "label": "Property Type",
+          "type": "select",
+          "placeholder": "Select property type",
+          "required": true,
+          "options": ["Residential", "Commercial", "Industrial", "Other"]
+        },
+        {
+          "name": "service",
+          "label": "Service Required",
+          "type": "select",
+          "placeholder": "Select a service",
+          "required": true,
+          "options": [
+            "Terrace Waterproofing",
+            "Bathroom Waterproofing",
+            "Basement Waterproofing",
+            "Water Tank Waterproofing",
+            "External Wall Waterproofing",
+            "Roof Waterproofing",
+            "Balcony Waterproofing",
+            "Swimming Pool Waterproofing",
+            "Not Sure / Need Inspection"
+          ]
+        },
+        {
+          "name": "area",
+          "label": "Approx. Area (sq. ft.)",
+          "type": "number",
+          "placeholder": "e.g. 1200",
+          "required": false
+        },
+        {
+          "name": "date",
+          "label": "Preferred Inspection Date",
+          "type": "date",
+          "placeholder": "",
+          "required": false
+        },
+        {
+          "name": "message",
+          "label": "Describe Your Problem",
+          "type": "textarea",
+          "placeholder": "Tell us about the leakage, dampness or work required...",
+          "required": false,
+          "full": true
+        }
+      ],
+      "submit": "Get My Free Quote",
+      "submitIcon": "FaArrowRight",
+      "success": {
+        "icon": "FaCheckCircle",
+        "title": "Quote Request Received!",
+        "text": "Thank you for choosing DuraCare. Our expert will call you within 24 hours to schedule a free inspection.",
+        "button": "Submit Another Request"
+      }
+    },
+    "steps": {
+      "eyebrow": "How It Works",
+      "title": "Get Your Quote in",
+      "titleHighlight": "4 Simple Steps",
+      "description": "A simple, transparent process from your first request to a completely leak-free property.",
+      "items": [
+        {
+          "icon": "FaClipboardList",
+          "title": "Submit Request",
+          "text": "Fill out the quote form with your property and service details."
+        },
+        {
+          "icon": "FaSearch",
+          "title": "Free Inspection",
+          "text": "Our expert visits your site and identifies the root cause."
+        },
+        {
+          "icon": "FaFileInvoiceDollar",
+          "title": "Get Quotation",
+          "text": "Receive a clear, detailed quotation with no hidden costs."
+        },
+        {
+          "icon": "FaTools",
+          "title": "Work Begins",
+          "text": "Our certified team completes the work on time with warranty."
+        }
+      ]
+    }
+  },
+
+  "gallery": {
+    "icons": {
+      "zoom": "FaSearchPlus",
+      "play": "FaPlay",
+      "close": "FaTimes",
+      "prev": "FaChevronLeft",
+      "next": "FaChevronRight"
+    },
+    "images": {
+      "title": "Image",
+      "titleHighlight": "Gallery",
+      "description": "Take a look at our recent waterproofing work and see how we protect homes and buildings with reliable, long-lasting solutions.",
+      "items": [
+        {
+          "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Team applying rooftop waterproofing"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Roof waterproofing in progress"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Roof inspection before waterproofing"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Workers on a building project"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1600&q=80",
+          "alt": "External wall coating work"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Basement wall treatment"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Waterproofed modern bathroom"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Waterproofed rooftop swimming pool"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Apartment balconies after waterproofing"
+        }
+      ]
+    },
+    "videos": {
+      "title": "Video",
+      "titleHighlight": "Gallery",
+      "description": "Watch our waterproofing process, application techniques and real project work in action to see how we deliver durable and effective solutions.",
+      "items": [
+        {
+          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80",
+          "alt": "Technician at work on site"
+        },
+        {
+          "src": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=1000&q=80",
+          "alt": "Building structure under construction"
+        },
+        {
+          "src": "https://samplelib.com/lib/preview/mp4/sample-10s.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1000&q=80",
+          "alt": "High-rise construction project"
+        },
+        {
+          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=1000&q=80",
+          "alt": "Rainwater on a waterproofed surface"
+        },
+        {
+          "src": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=80",
+          "alt": "Finished residential project"
+        },
+        {
+          "src": "https://samplelib.com/lib/preview/mp4/sample-10s.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1000&q=80",
+          "alt": "Water tank waterproofing"
+        },
+        {
+          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=80",
+          "alt": "City rooftops we protect"
+        },
+        {
+          "src": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+          "alt": "Completed home roofing project"
+        },
+        {
+          "src": "https://samplelib.com/lib/preview/mp4/sample-10s.mp4",
+          "thumbnail": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1000&q=80",
+          "alt": "Rooftop view at sunset"
+        }
+      ]
+    }
+  },
+
+  "faq": {
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "description": "Find answers to the most common questions about our waterproofing services, process, materials and maintenance to help you make the right decision for your property.",
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Waterproofing professionals working on a rooftop",
+    "toggleIcon": "FaChevronDown",
+    "defaultOpen": 0,
+    "items": [
+      {
+        "question": "Do you offer a warranty on waterproofing work?",
+        "answer": "Yes. Every project comes with a written warranty that covers materials and workmanship. The warranty period depends on the system used and is shared with you before work begins."
+      },
+      {
+        "question": "Do you provide a free site inspection?",
+        "answer": "Yes, our team visits your property, checks the affected areas and identifies the source of leakage before suggesting the right solution and a clear quotation."
+      },
+      {
+        "question": "How can I get support if I run into any issues?",
+        "answer": "You can call us, email us or use the contact form. Our support team responds quickly and schedules a visit if an on-site check is needed, even after project completion."
+      },
+      {
+        "question": "What type of waterproofing materials do you use?",
+        "answer": "We use industry-grade materials such as polyurethane coatings, cementitious systems, bituminous membranes and crystalline treatments, selected based on the surface and exposure."
+      },
+      {
+        "question": "How long does waterproofing last?",
+        "answer": "With quality materials and proper application, waterproofing typically lasts 8–15 years. Regular inspections and timely maintenance help extend its life even further."
+      },
+      {
+        "question": "Can waterproofing be done on an existing building?",
+        "answer": "Yes. We waterproof both new and existing buildings. For existing structures, we repair cracks and prepare the surface before applying the waterproofing system."
+      }
+    ]
+  },
+
+  "whyChooseUs": {
+    "eyebrow": "Why Choose Us",
+    "title": "Reliable Waterproofing",
+    "titleSecond": "Solutions for",
+    "titleHighlight": "Lasting Protection",
+    "description": "We deliver high-quality waterproofing solutions with expert workmanship, durable materials, and a customer-focused approach to keep your property safe, dry and damage-free for years.",
+    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "Certified technician wearing a safety helmet at work",
+    "features": [
+      {
+        "title": "Premium Quality Materials",
+        "text": "We use industry-grade and durable materials for long-lasting protection.",
+        "icon": "TbShieldCheck"
+      },
+      {
+        "title": "Skilled & Certified Team",
+        "text": "Our experienced professionals ensure precise installation and reliable service.",
+        "icon": "TbUsers"
+      },
+      {
+        "title": "Timely Project Completion",
+        "text": "We value your time and complete every project within the committed deadline.",
+        "icon": "TbClock"
+      },
+      {
+        "title": "Customer-Focused Support",
+        "text": "We provide continuous support even after project completion.",
+        "icon": "LuHandHelping"
+      }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Building Stronger Spaces",
+    "titleHighlight": "with Reliable Waterproofing",
+    "description": "We provide professional waterproofing solutions to protect your property from water damage. Our mission is to deliver long-lasting, reliable and cost-effective solutions for residential, commercial and industrial spaces.",
+    "images": {
+      "main": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+      "mainAlt": "Waterproofing professionals working on a rooftop",
+      "small": "https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=600&q=80",
+      "smallAlt": "Water droplets on a waterproofed surface",
+      "card": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=600&q=80",
+      "cardAlt": "Waterproofed terrace with city view"
+    },
+    "experience": {
+      "value": "10+",
+      "label": "Years of experience in delivering trusted waterproofing solutions."
+    },
+    "commitment": "Committed to keeping your property safe, dry and durable – today and tomorrow.",
+    "checkIcon": "FaCheck",
+    "points": [
+      "Skilled & Certified Professionals",
+      "High-Quality Materials",
+      "Customized Solutions for Every Property"
+    ],
+    "button": {
+      "label": "Learn More About Us",
+      "href": "/about",
+      "icon": "FaArrowRight"
+    }
+  },
+
+  "services": {
+    "eyebrow": "Our Services",
+    "titleStart": "Comprehensive",
+    "titleHighlight": "Waterproofing",
+    "titleEnd": "Solutions",
+    "description": "We provide expert waterproofing solutions to protect your property from leakage, seepage and water damage. From new installations to repairs and maintenance, we deliver long-lasting and reliable solutions for every need.",
+    "checkIcon": "FaCheck",
+    "buttonIcon": "FaArrowRight",
+    "items": [
+      {
+        "title": "Terrace",
+        "titleHighlight": "Waterproofing",
+        "description": "Effective waterproofing solutions to prevent water leakage and protect your terrace from harsh weather conditions.",
+        "points": [
+          "Leakage Protection",
+          "Weather Resistant Coating",
+          "Long-Lasting Durability"
+        ],
+        "image": "https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Worker applying waterproofing on a terrace roof",
+        "button": { "label": "Read More", "href": "/services/terrace" },
+        "slug": "terrace",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "Your terrace faces direct sunlight, heavy rain and constant temperature changes, which makes it the most leak-prone part of any building. Water damage on the terrace can lead to costly repairs, structural issues, ceiling seepage and unhealthy living or working conditions.",
+            "Our terrace waterproofing system combines surface preparation, crack repair and high-performance elastomeric coatings that expand and contract with the structure. The result is a seamless, UV-resistant protective layer that keeps your terrace dry, cool and durable in all weather conditions."
+          ]
+        }
+      },
+      {
+        "title": "Bathroom",
+        "titleHighlight": "Waterproofing",
+        "description": "Specialized waterproofing systems to stop leakage and moisture in bathrooms, keeping your space safe and durable.",
+        "points": [
+          "Leakage & Seepage Control",
+          "Mold & Dampness Prevention",
+          "Long-Lasting Protection"
+        ],
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Modern waterproofed bathroom",
+        "button": { "label": "Read More", "href": "/services/bathroom" },
+        "slug": "bathroom",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "Bathrooms are exposed to water every single day. Even a small gap in tile joints or around pipes can let moisture seep into walls and floors, causing dampness, mould, peeling paint and leakage into rooms below.",
+            "We waterproof bathrooms using flexible membranes, corner reinforcement and sealed pipe joints before tiling, or with non-destructive grout and joint treatments for existing bathrooms. This keeps your bathroom hygienic, odour-free and protected for years."
+          ]
+        }
+      },
+      {
+        "title": "Basement",
+        "titleHighlight": "Waterproofing",
+        "description": "Reliable waterproofing solutions to prevent water infiltration and keep your basement dry and structurally sound.",
+        "points": [
+          "Seepage & Dampness Control",
+          "Strong & Durable Coating",
+          "Long-Term Protection"
+        ],
+        "image": "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Technician working on basement walls",
+        "button": { "label": "Read More", "href": "/services/basement" },
+        "slug": "basement",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "Basements sit below ground level, where groundwater pressure constantly pushes moisture through walls and floors. Without proper protection this leads to seepage, efflorescence, rusting of reinforcement and an unusable, damp space.",
+            "Our basement waterproofing uses crystalline treatments, injection grouting and positive or negative side membranes depending on site conditions. We seal active leaks, block water pathways and create a dry, structurally sound space you can actually use."
+          ]
+        }
+      },
+      {
+        "title": "Water Tank",
+        "titleHighlight": "Waterproofing",
+        "description": "Advanced waterproofing systems to prevent leakage in overhead and underground water tanks, ensuring safe and clean water storage.",
+        "points": [
+          "Leakage Prevention",
+          "Strong & Durable Coating",
+          "Safe Water Storage"
+        ],
+        "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Water storage tanks",
+        "button": { "label": "Read More", "href": "/services/water-tank" },
+        "slug": "water-tank",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "Leaking water tanks waste water, weaken the surrounding structure and can contaminate your stored water. Overhead and underground tanks both need a protective lining that holds water without cracking or reacting with it.",
+            "We clean and repair the tank surface, then apply food-grade, non-toxic waterproof coatings suitable for potable water. This stops leakage, prevents algae and bacterial growth, and keeps your water storage safe and clean."
+          ]
+        }
+      },
+      {
+        "title": "External Wall",
+        "titleHighlight": "Waterproofing",
+        "description": "Protect your building from water seepage, cracks and dampness with effective external wall waterproofing solutions.",
+        "points": [
+          "Seepage Prevention",
+          "Weather Resistant Coating",
+          "Enhanced Durability"
+        ],
+        "image": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Workers coating the external wall of a house",
+        "button": { "label": "Read More", "href": "/services/external-wall" },
+        "slug": "external-wall",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "External walls take the full force of driving rain and humidity. Hairline cracks and porous plaster let water travel inside, causing damp patches, peeling paint, fungus and gradual damage to the wall structure.",
+            "We treat cracks, apply water-repellent primers and finish with breathable, weather-resistant waterproof coatings. Your walls stay dry from the inside, paint lasts longer and the building looks fresh for years."
+          ]
+        }
+      },
+      {
+        "title": "Roof",
+        "titleHighlight": "Waterproofing",
+        "description": "High-performance waterproofing solutions to protect your roof from water leakage, heat and extreme weather conditions.",
+        "points": [
+          "Leakage Protection",
+          "UV & Weather Resistance",
+          "Long-Lasting Performance"
+        ],
+        "image": "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Roofer applying waterproofing on a house roof",
+        "button": { "label": "Read More", "href": "/services/roof" },
+        "slug": "roof",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "Your roof is the first line of defence against rain, heat and storms. Damaged sheets, open joints and worn-out coatings quickly turn into leaks that damage ceilings, insulation and everything inside.",
+            "We inspect the roof, repair joints and damaged areas, and apply high-performance membranes or reflective coatings suited to your roof type. This gives you a leak-free roof with better heat resistance and a longer service life."
+          ]
+        }
+      },
+      {
+        "title": "Balcony",
+        "titleHighlight": "Waterproofing",
+        "description": "Prevent water leakage and protect your balcony with reliable waterproofing solutions designed for long-term durability.",
+        "points": [
+          "Leakage & Seepage Control",
+          "Weather Resistant Coating",
+          "Long-Lasting Performance"
+        ],
+        "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Apartment building with waterproofed balconies",
+        "button": { "label": "Read More", "href": "/services/balcony" },
+        "slug": "balcony",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "Balconies are open to rain on one side and connected to your living space on the other. Poor slope, open tile joints and blocked drains let water collect and seep into the slab, causing leakage below and damage to the edges.",
+            "Our balcony waterproofing corrects drainage, seals joints and edges, and applies a durable, slip-resistant waterproof layer, with or without removing your existing tiles. Your balcony stays dry, safe and good-looking."
+          ]
+        }
+      },
+      {
+        "title": "Swimming Pool",
+        "titleHighlight": "Waterproofing",
+        "description": "Advanced waterproofing systems to prevent water loss and keep your swimming pool safe, strong and durable.",
+        "points": [
+          "Leakage Prevention",
+          "Durable & Flexible Coating",
+          "Long-Term Protection"
+        ],
+        "image": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=700&q=80",
+        "imageAlt": "Waterproofed rooftop swimming pool",
+        "button": { "label": "Read More", "href": "/services/swimming-pool" },
+        "slug": "swimming-pool",
+        "details": {
+          "image": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1400&q=80",
+          "paragraphs": [
+            "A swimming pool holds thousands of litres of water under constant pressure and chemical exposure. Even small leaks waste water, raise maintenance costs and can damage the surrounding structure and foundation.",
+            "We waterproof pools with chemical-resistant, flexible systems applied before tiling or as repair treatments for existing pools. This prevents water loss, protects the shell from cracks and keeps your pool strong and beautiful."
+          ]
+        }
+      }
+    ]
+  },
+
+  "achievements": {
+    "eyebrow": "Our Achievements",
+    "title": "Building Stronger,",
+    "titleHighlight": "Safer Properties",
+    "description": "Our numbers reflect the trust our clients place in us and our commitment to delivering high-quality waterproofing solutions.",
+    "defaultActive": 1,
+    "stats": [
+      {
+        "value": "1,250+",
+        "label": "Projects Completed",
+        "icon": "TbHomeShield",
+        "arcColor": "#0B2A6F"
+      },
+      {
+        "value": "950+",
+        "label": "Happy Clients",
+        "icon": "TbUsersGroup",
+        "arcColor": "#0B2A6F"
+      },
+      {
+        "value": "15+",
+        "label": "Years of Experience",
+        "icon": "GiAutoRepair",
+        "arcColor": "#0B2A6F"
+      },
+      {
+        "value": "100%",
+        "label": "Customer Satisfaction",
+        "icon": "FaRegHandshake",
+        "arcColor": "#1D5FE0"
+      }
+    ]
+  },
+
+  "blog": {
+    "eyebrow": "Our Blog",
+    "title": "Latest News",
+    "titleHighlight": "& Roofing Tips",
+    "description": "Stay updated with expert advice, maintenance tips and industry insights to keep your roof strong and long-lasting.",
+    "dateIcon": "TbCalendarEvent",
+    "arrowIcon": "FaArrowRight",
+    "readMore": "Read More",
+    "posts": [
+      {
+        "slug": "top-roofing-tips",
+        "featured": true,
+        "date": "January 25, 2026",
+        "title": "Top Roofing Tips Every Homeowner Should Know",
+        "excerpt": "Discover essential roofing tips to keep your home safe, efficient and looking great for years to come.",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Modern house with a durable roof",
+        "content": {
+          "intro": "Your roof protects everything beneath it, yet it is often the most neglected part of a home. A few simple habits can add years to its life and save you from expensive repairs.",
+          "sections": [
+            {
+              "heading": "Inspect Your Roof Twice a Year",
+              "paragraphs": [
+                "Check your roof before and after the monsoon. Look for cracks, loose joints, damaged coating and signs of water pooling so small problems can be fixed early."
+              ]
+            },
+            {
+              "heading": "Simple Habits That Protect Your Roof",
+              "items": [
+                {
+                  "title": "Keep Drains Clear",
+                  "text": "Remove leaves and debris from drains and gutters so rainwater flows away quickly."
+                },
+                {
+                  "title": "Trim Overhanging Branches",
+                  "text": "Branches can scratch the surface and drop debris that blocks drainage."
+                },
+                {
+                  "title": "Fix Cracks Immediately",
+                  "text": "Even hairline cracks let water in and grow larger with every season."
+                }
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "Regular inspection, clean drainage and timely repairs are the easiest ways to keep your roof strong, leak-free and looking great for years."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "maintain-your-roof",
+        "featured": false,
+        "date": "January 30, 2026",
+        "title": "How to Maintain Your Roof Year-Round",
+        "excerpt": "Learn simple and effective maintenance tips to extend the life of your roof and prevent costly repairs.",
+        "image": "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Roofer inspecting a house roof",
+        "content": {
+          "intro": "Roof maintenance is not a one-time task. Each season brings different challenges, and a simple year-round routine keeps your roof in top condition.",
+          "sections": [
+            {
+              "heading": "Season-by-Season Checklist",
+              "items": [
+                {
+                  "title": "Summer",
+                  "text": "Check for heat cracks and fading coating. Reapply reflective coating if needed."
+                },
+                {
+                  "title": "Monsoon",
+                  "text": "Keep drains clear and watch for water pooling or damp patches on ceilings."
+                },
+                {
+                  "title": "Winter",
+                  "text": "Inspect joints and edges for damage caused by temperature changes."
+                }
+              ]
+            },
+            {
+              "heading": "When to Call a Professional",
+              "paragraphs": [
+                "If you notice ceiling stains, recurring damp patches or peeling coating, a professional inspection can identify hidden problems before they become serious."
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "A little attention every season goes a long way. Year-round maintenance extends your roof's life and prevents costly repairs."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "roof-replacement-signs",
+        "featured": false,
+        "date": "February 01, 2026",
+        "title": "Signs It's Time for a Roof Replacement",
+        "excerpt": "Know the key signs that indicate your roof needs a replacement and how to plan for a safe, stress-free upgrade.",
+        "image": "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Workers on a construction site",
+        "content": {
+          "intro": "Repairs can only go so far. At some point, replacing or fully re-waterproofing your roof is the safer and more cost-effective choice.",
+          "sections": [
+            {
+              "heading": "Warning Signs to Watch For",
+              "list": [
+                "Frequent leaks even after repairs",
+                "Large cracks spreading across the surface",
+                "Sagging or uneven areas",
+                "Damp walls and ceilings on the top floor",
+                "Roof is more than 15–20 years old"
+              ]
+            },
+            {
+              "heading": "Planning Your Upgrade",
+              "paragraphs": [
+                "Get a professional assessment, compare waterproofing systems and plan the work for dry weather. A well-planned upgrade avoids disruption and gives you long-term protection."
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "Recognising these signs early helps you replace your roof on your terms, before a small issue becomes a major expense."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "prevent-roof-leaks-monsoon",
+        "featured": true,
+        "date": "February 10, 2026",
+        "title": "How to Prevent Roof Leaks During Monsoon",
+        "excerpt": "Get practical tips to protect your roof from heavy rain, water leakage and weather damage.",
+        "image": "https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Heavy rain falling on a rooftop surface",
+        "content": {
+          "intro": "Monsoon is the toughest season for any roof. Heavy, continuous rain exposes every weak spot, so preparation before the rains begin is essential.",
+          "sections": [
+            {
+              "heading": "Prepare Before the Rains",
+              "items": [
+                {
+                  "title": "Clean Drains and Outlets",
+                  "text": "Blocked outlets cause water to pool and seep through the slab."
+                },
+                {
+                  "title": "Seal Cracks and Joints",
+                  "text": "Fill cracks and seal joints around pipes, parapets and corners."
+                },
+                {
+                  "title": "Apply a Waterproof Coating",
+                  "text": "A fresh waterproof layer gives your roof full protection for the season."
+                }
+              ]
+            },
+            {
+              "heading": "During the Monsoon",
+              "paragraphs": [
+                "Check the roof after heavy rain for standing water and watch ceilings for damp patches. Address any leak immediately to prevent damage to plaster, paint and wiring."
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "With the right preparation, your roof can handle even the heaviest monsoon and keep your home dry and safe."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "best-roof-waterproofing-solutions",
+        "featured": false,
+        "date": "February 15, 2026",
+        "title": "Best Waterproofing Solutions for Your Roof",
+        "excerpt": "Explore effective waterproofing solutions to keep your roof strong, leak-free and durable in all weather conditions.",
+        "image": "https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Worker applying waterproofing on a roof",
+        "content": {
+          "intro": "There is no single waterproofing system that suits every roof. The right choice depends on your roof type, climate, budget and how the roof is used.",
+          "sections": [
+            {
+              "heading": "Popular Waterproofing Systems",
+              "items": [
+                {
+                  "title": "Polyurethane Coatings",
+                  "text": "Flexible, seamless and UV-resistant, ideal for exposed terraces."
+                },
+                {
+                  "title": "Bituminous Membranes",
+                  "text": "Strong and cost-effective protection for flat concrete roofs."
+                },
+                {
+                  "title": "Cementitious Coatings",
+                  "text": "Easy to apply and suitable for areas with less movement."
+                },
+                {
+                  "title": "Elastomeric Coatings",
+                  "text": "Stretch with the structure and reflect heat to keep interiors cool."
+                }
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "A professional inspection helps you choose the system that gives the best protection and value for your specific roof."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "choosing-roofing-material",
+        "featured": false,
+        "date": "February 18, 2026",
+        "title": "Choosing the Right Roofing Material",
+        "excerpt": "Compare popular roofing materials and find the best option for durability, weather resistance and long-term value.",
+        "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Modern house with a flat roof",
+        "content": {
+          "intro": "Your roofing material affects durability, maintenance, indoor comfort and cost. Understanding the options helps you make a choice that lasts.",
+          "sections": [
+            {
+              "heading": "Things to Consider",
+              "list": [
+                "Local climate and rainfall",
+                "Weight the structure can support",
+                "Heat resistance and insulation",
+                "Maintenance requirements",
+                "Budget and expected lifespan"
+              ]
+            },
+            {
+              "heading": "Common Roofing Materials",
+              "items": [
+                {
+                  "title": "RCC Flat Roofs",
+                  "text": "Strong and versatile, but need good waterproofing to prevent leaks."
+                },
+                {
+                  "title": "Metal Sheets",
+                  "text": "Lightweight and quick to install; joints and screws need sealing."
+                },
+                {
+                  "title": "Clay and Concrete Tiles",
+                  "text": "Attractive and long-lasting, with an underlayer for full protection."
+                }
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "Whatever material you choose, pairing it with the right waterproofing system ensures it performs well for years."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "roof-waterproofing-tips",
+        "featured": false,
+        "date": "February 22, 2026",
+        "title": "Essential Roof Waterproofing Tips",
+        "excerpt": "Learn expert tips to waterproof your roof effectively and prevent future damage from rain and moisture.",
+        "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "Professionals working on a rooftop",
+        "content": {
+          "intro": "Waterproofing is an essential step in protecting your home from water damage, leakage, and structural issues. With the right waterproofing solutions and regular maintenance, you can keep your property safe, durable and comfortable for years.",
+          "sections": [
+            {
+              "heading": "Why Waterproofing is Important",
+              "paragraphs": [
+                "Waterproofing prevents water from seeping into your home, which can cause cracks, dampness, mold growth and damage to the structure. It not only enhances the lifespan of your building but also maintains a healthy and safe living environment. Proper waterproofing helps in maintaining the strength of walls, roofs and foundations, ensuring long-term protection against harsh weather conditions."
+              ]
+            },
+            {
+              "heading": "Common Areas That Need Waterproofing",
+              "paragraphs": [
+                "Certain areas of your home are more prone to water leakage and require special attention. These include:"
+              ],
+              "list": [
+                "Terraces and roofs",
+                "Bathrooms and kitchens",
+                "Basements and foundations",
+                "External walls",
+                "Balconies and water tanks"
+              ]
+            },
+            {
+              "heading": "Top Waterproofing Tips for Homeowners",
+              "paragraphs": [
+                "Follow these simple yet effective tips to keep your home protected from water leakage:"
+              ],
+              "items": [
+                {
+                  "title": "Choose the Right Waterproofing Solution",
+                  "text": "Use high-quality and weather-resistant waterproofing materials suitable for your specific area, such as terrace, bathroom or basement."
+                },
+                {
+                  "title": "Ensure Proper Surface Preparation",
+                  "text": "Clean the surface thoroughly and repair any cracks or damages before applying waterproofing products."
+                },
+                {
+                  "title": "Focus on Regular Maintenance",
+                  "text": "Inspect your roof, walls and other vulnerable areas regularly to check for signs of wear and tear."
+                },
+                {
+                  "title": "Pay Attention to Drainage",
+                  "text": "Ensure proper water drainage systems to prevent water accumulation and minimize the risk of leakage."
+                },
+                {
+                  "title": "Hire Professional Experts",
+                  "text": "Consult experienced waterproofing professionals to get the right solutions and long-lasting results."
+                }
+              ]
+            },
+            {
+              "heading": "Benefits of Proper Waterproofing",
+              "paragraphs": [
+                "Investing in professional waterproofing offers multiple benefits, such as:"
+              ],
+              "list": [
+                "Prevents water leakage and seepage",
+                "Protects the structural strength of your home",
+                "Keeps interiors safe and dry",
+                "Reduces maintenance and repair costs",
+                "Enhances the overall value and life of your property"
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "Waterproofing is a long-term investment that protects your home from water damage and ensures a safe, comfortable and healthy living space. By choosing the right solutions and following regular maintenance, you can enjoy a leak-free home for years to come."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "professional-roof-waterproofing-benefits",
+        "featured": false,
+        "date": "February 25, 2026",
+        "title": "Benefits of Professional Roof Waterproofing",
+        "excerpt": "Discover why professional waterproofing solutions are a smart investment for a safe, durable and long-lasting roof.",
+        "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1600&q=80",
+        "imageAlt": "City rooftops protected by waterproofing",
+        "content": {
+          "intro": "DIY waterproofing may look cheaper, but professional work delivers protection that lasts far longer and avoids repeated repair costs.",
+          "sections": [
+            {
+              "heading": "Why Choose Professionals",
+              "items": [
+                {
+                  "title": "Accurate Diagnosis",
+                  "text": "Experts find the real source of leakage instead of treating only the symptoms."
+                },
+                {
+                  "title": "Right Materials",
+                  "text": "Professionals select systems suited to your roof type and climate."
+                },
+                {
+                  "title": "Proper Application",
+                  "text": "Correct surface preparation and layer thickness ensure maximum durability."
+                },
+                {
+                  "title": "Warranty and Support",
+                  "text": "Professional work comes with a warranty and after-service support."
+                }
+              ]
+            },
+            {
+              "heading": "Conclusion",
+              "paragraphs": [
+                "Professional roof waterproofing is a smart investment that keeps your home dry, protects its structure and saves money over time."
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "button": { "label": "View All Blogs", "href": "/blog" }
+  },
+
+  "footer": {
+    "about": "We provide reliable waterproofing solutions to keep your property safe, dry and durable for years.",
+    "socialTitle": "Follow Us On Socials:",
+    "linkIcon": "FaChevronRight",
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "label": "Home", "href": "/" },
+        { "label": "About Us", "href": "/about" },
+        { "label": "Services", "href": "/services" },
+        { "label": "FAQ", "href": "/faq" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Gallery", "href": "/gallery" },
+        { "label": "Contact Us", "href": "/contact" },
+        { "label": "Get A Quote", "href": "/get-a-quote" }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "links": [
+        { "label": "Roof Waterproofing", "href": "/services/roof" },
+        { "label": "Basement Waterproofing", "href": "/services/basement" },
+        { "label": "Bathroom Waterproofing", "href": "/services/bathroom" },
+        { "label": "Terrace Waterproofing", "href": "/services/terrace" },
+        { "label": "Water Tank Waterproofing", "href": "/services/water-tank" },
+        { "label": "Industrial Waterproofing", "href": "/services" },
+        {
+          "label": "Exterior Wall Waterproofing",
+          "href": "/services/external-wall"
+        },
+        { "label": "Balcony Waterproofing", "href": "/services/balcony" }
+      ]
+    },
+    "contactTitle": "Contact Us",
+    "contactIcons": {
+      "address": "FaMapMarkerAlt",
+      "phone": "FaPhoneAlt",
+      "email": "FaEnvelope",
+      "hours": "FaClock"
+    },
+    "copyright": "Copyright © 2026 DuraCare. All rights reserved."
+  }
+}
