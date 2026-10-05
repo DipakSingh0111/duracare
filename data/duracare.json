@@ -346,6 +346,24 @@
                       }
                     ]
                   }
+                },
+                "thankYou": {
+                  "meta": {
+                    "title": "Thank You | DuraCare",
+                    "description": "Thank you for contacting DuraCare. Our waterproofing experts will get back to you shortly."
+                  },
+                  "banner": {
+                    "heading": {
+                      "main": "Thank ",
+                      "highlight": "You"
+                    },
+                    "description": "We have received your request. Our team will reach out to you shortly with the next steps.",
+                    "breadcrumb": [
+                      {
+                        "label": "Thank You"
+                      }
+                    ]
+                  }
                 }
               }
             }
@@ -1536,6 +1554,49 @@
             }
           }
         },
+        "ThankYou": {
+          "variants": {
+            "DuraCareThankYou1": {
+              "icon": "FaCheckCircle",
+              "badge": "Request Received",
+              "heading": {
+                "main": "Thank You for",
+                "highlight": "Choosing DuraCare"
+              },
+              "description": "Your message has reached our team. A waterproofing expert will review your details and contact you within 24 hours to discuss the best solution for your property.",
+              "stepsTitle": "What Happens Next?",
+              "steps": [
+                {
+                  "icon": "FaClipboardList",
+                  "title": "We Review Your Request",
+                  "text": "Our team checks your requirement and property details."
+                },
+                {
+                  "icon": "FaPhoneAlt",
+                  "title": "We Call You Back",
+                  "text": "An expert contacts you within 24 hours to understand the problem."
+                },
+                {
+                  "icon": "FaSearch",
+                  "title": "Free Site Inspection",
+                  "text": "We visit your site, find the root cause and share a clear quotation."
+                }
+              ],
+              "helpText": "Need urgent help? Call us directly:",
+              "buttons": {
+                "primary": {
+                  "label": "Back To Home",
+                  "href": "/",
+                  "icon": "FaArrowRight"
+                },
+                "secondary": {
+                  "label": "Explore Services",
+                  "href": "/services"
+                }
+              }
+            }
+          }
+        },
         "Footer": {
           "variants": {
             "DuraCareFooter1": {
@@ -1576,6 +1637,10 @@
                   {
                     "label": "Get A Quote",
                     "href": "/get-a-quote"
+                  },
+                  {
+                    "label": "Thank You",
+                    "href": "/thank-you"
                   }
                 ]
               },

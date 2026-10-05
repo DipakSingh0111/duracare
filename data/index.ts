@@ -43,6 +43,7 @@ export type GalleryMediaData = GalleryData["images"] | GalleryData["videos"];
 export type ContactPageData = typeof sections.ContactPage.variants.DuraCareContactPage1;
 export type QuotePageData = typeof sections.QuotePage.variants.DuraCareQuotePage1;
 export type EnquiryFormData = ContactPageData["form"] | QuotePageData["form"];
+export type ThankYouData = typeof sections.ThankYou.variants.DuraCareThankYou1;
 
 export type HeadingData = { main: string; highlight: string; end?: string; middle?: string };
 
@@ -74,6 +75,7 @@ export const site = {
   gallery: sections.Gallery.variants.DuraCareGallery1,
   contactPage: sections.ContactPage.variants.DuraCareContactPage1,
   quotePage: sections.QuotePage.variants.DuraCareQuotePage1,
+  thankYou: sections.ThankYou.variants.DuraCareThankYou1,
 };
 
 export function getService(slug: string): ServiceDetailsData | undefined {
