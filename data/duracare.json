@@ -1416,7 +1416,7 @@
                   "icon": "FaHeadset",
                   "title": "Need Help Right Away?",
                   "text": "Call our experts for instant assistance.",
-                  "phone": "+91 1234 567 789",
+                  "phone": "+91 00000 00000",
                   "phoneHref": "tel:+911234567789",
                   "email": "info@xyz.com",
                   "emailHref": "mailto:info@xyz.com"
