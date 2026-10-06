@@ -587,7 +587,7 @@
                     },
                     {
                       "icon": "FaMapMarkerAlt",
-                      "text": "123 Business Avenue, Sector 62, Noida - 201301"
+                      "text": "123 Business Avenue, Suite 100, New York, NY 10001, USA"
                     },
                     {
                       "icon": "FaEnvelope",
@@ -1417,7 +1417,7 @@
                   "title": "Need Help Right Away?",
                   "text": "Call our experts for instant assistance.",
                   "phone": "+91 00000 00000",
-                  "phoneHref": "tel:+911234567789",
+                  "phoneHref": "tel:+91 00000 00000",
                   "email": "info@xyz.com",
                   "emailHref": "mailto:info@xyz.com"
                 }

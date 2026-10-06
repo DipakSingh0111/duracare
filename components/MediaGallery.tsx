@@ -15,6 +15,7 @@ export default function MediaGallery({ data, type = "image", className = "" }: M
   const { icons } = site.gallery;
   const { labels } = site;
   const [active, setActive] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState<number>(6);
   const isVideo = type === "video";
 
   const close = useCallback(() => setActive(null), []);
@@ -40,11 +41,12 @@ export default function MediaGallery({ data, type = "image", className = "" }: M
   }, [active, close, step]);
 
   const current = active === null ? null : items[active];
+  const hasMore = visibleCount < items.length;
 
   return (
     <>
       <div className={`grid gap-5 sm:grid-cols-2 lg:grid-cols-3 ${className}`}>
-        {items.map((item, i) => (
+        {items.slice(0, visibleCount).map((item, i) => (
           <button
             key={`${item.src}-${i}`}
             type="button"
@@ -76,6 +78,19 @@ export default function MediaGallery({ data, type = "image", className = "" }: M
           </button>
         ))}
       </div>
+
+      {hasMore && (
+        <div className="mt-10 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setVisibleCount((prev) => prev + 6)}
+            className="group inline-flex items-center gap-2 rounded-full bg-navy px-8 py-3.5 text-sm font-semibold text-white shadow-md transition-colors duration-300 hover:bg-orange"
+          >
+            Load More
+            <Icon name="FaChevronDown" size={12} className="transition-transform duration-300 group-hover:translate-y-0.5" />
+          </button>
+        </div>
+      )}
 
       {current && (
         <div

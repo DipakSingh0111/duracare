@@ -11,7 +11,7 @@ export default function AboutPage() {
     <>
       <PageBanner page="about" />
       <AboutSection showCta={false} />
-      <WhyChooseUs />
+      <WhyChooseUs className="mb-16 lg:mb-16" />
     </>
   );
 }

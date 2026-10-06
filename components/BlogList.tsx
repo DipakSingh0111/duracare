@@ -7,7 +7,7 @@ export default function BlogList({ data, className = "" }: SectionProps<BlogData
   const blog = data || site.blog;
 
   return (
-    <section className={`bg-white py-16 lg:py-20 ${className}`}>
+    <section className={`bg-white py-10 lg:py-12 ${className}`}>
       <Container>
         <SectionHeading badge={blog.badge} heading={blog.heading} description={blog.description} />
 

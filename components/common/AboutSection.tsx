@@ -10,7 +10,7 @@ export default function AboutSection({ data, className = "", showCta = true }: A
   const about = data || site.about;
 
   return (
-    <section className={`bg-white py-16 lg:py-24 ${className}`}>
+    <section className={`bg-white py-10 lg:py-12 ${className}`}>
       <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
         <div className="relative mx-auto aspect-[10/9] w-full max-w-[600px]">
           <div className="absolute right-0 top-0 h-full w-[82%] overflow-hidden rounded-[28px] bg-slate-200">
